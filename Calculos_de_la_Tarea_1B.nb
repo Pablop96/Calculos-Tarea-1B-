@@ -1,0 +1,406 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     11110,        398]
+NotebookOptionsPosition[      8910,        351]
+NotebookOutlinePosition[      9296,        367]
+CellTagsIndexPosition[      9253,        364]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[TextData[StyleBox["C\[AAcute]lculos de la Tarea 1B",
+ FontFamily->"EB Garamond 08",
+ FontSize->96,
+ FontColor->RGBColor[
+  0.0196078431372549, 0.0196078431372549, 0.0196078431372549]]], "Title",
+ CellFrame->3,
+ CellDingbat->None,
+ TextAlignment->Center,
+ TextJustification->0,ExpressionUUID->"c994c7b8-bbea-4e56-8906-04f37ceb6ce0"],
+
+Cell[TextData[{
+ StyleBox["Inferencia Estad\[IAcute]stica",
+  FontFamily->"EB Garamond 08",
+  FontSize->48,
+  FontWeight->"Bold"],
+ "\n",
+ StyleBox["Ana",
+  FontFamily->"EB Garamond 08",
+  FontWeight->Bold],
+ StyleBox["\n",
+  FontFamily->"EB Garamond 08"],
+ StyleBox["Daniel",
+  FontFamily->"EB Garamond 08",
+  FontWeight->Bold],
+ StyleBox["\n",
+  FontFamily->"EB Garamond 08"],
+ StyleBox["Pablo",
+  FontFamily->"EB Garamond 08",
+  FontWeight->Bold],
+ StyleBox["\n                             \t\t\t\t\t\t\t",
+  FontFamily->"EB Garamond 08"],
+ StyleBox["28 de noviembre de 2020",
+  FontFamily->"EB Garamond 08",
+  FontWeight->Bold,
+  FontSlant->Italic]
+}], "Subtitle",
+ TextAlignment->Center,
+ TextJustification->0,ExpressionUUID->"48e97b0f-922a-4edf-a03e-7b390e3c51cf"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Cap\[IAcute]tulo 6",
+ FontFamily->"EB Garamond 08",
+ FontSize->36,
+ FontWeight->"Bold",
+ FontColor->RGBColor[
+  0.6470588235294118, 0.27058823529411763`, 0.0784313725490196]]], "Section",
+ CellFrame->2,
+ CellFrameColor->RGBColor[
+  0.5333333333333333, 0.12156862745098039`, 0.12156862745098039`],
+ TextAlignment->Center,
+ TextJustification->0,ExpressionUUID->"63e552fe-af6e-4ba1-8b17-efbb1bff9c92"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["1.",
+  FontFamily->"EB Garamond 08",
+  FontSize->18,
+  FontWeight->Bold,
+  FontVariations->{"Underline"->False}],
+ StyleBox[" Ejercicio 6.6.3:",
+  FontFamily->"EB Garamond 08",
+  FontSize->18,
+  FontWeight->Bold,
+  FontVariations->{"Underline"->True}]
+}], "Item",
+ CellDingbat->
+  "\[Wolf]",ExpressionUUID->"3b252e20-b147-42be-bb7f-6c9e10655d4c"],
+
+Cell[TextData[{
+ StyleBox["a)",
+  FontFamily->"EB Garamond 08",
+  FontSize->16,
+  FontWeight->Bold],
+ StyleBox[" ",
+  FontFamily->"EB Garamond 08"],
+ StyleBox["(",
+  FontFamily->"Roboto",
+  FontSize->24],
+ StyleBox["0.99*",
+  FontFamily->"Roboto"],
+ StyleBox["(",
+  FontFamily->"Roboto",
+  FontSize->18],
+ StyleBox["10^(-5)",
+  FontFamily->"Roboto",
+  FontSize->16],
+ StyleBox[")",
+  FontFamily->"Roboto",
+  FontSize->18],
+ StyleBox[")/(",
+  FontFamily->"Roboto",
+  FontSize->24],
+ StyleBox["0.99*",
+  FontFamily->"Roboto"],
+ StyleBox["(",
+  FontFamily->"Roboto",
+  FontSize->18],
+ StyleBox["10^(-5)",
+  FontFamily->"Roboto"],
+ StyleBox[")",
+  FontFamily->"Roboto",
+  FontSize->18],
+ StyleBox[" + 0.01*",
+  FontFamily->"Roboto"],
+ StyleBox["(",
+  FontFamily->"Roboto",
+  FontSize->18],
+ StyleBox["1-10^(-5)",
+  FontFamily->"Roboto",
+  FontSize->16],
+ StyleBox[")",
+  FontFamily->"Roboto",
+  FontSize->18],
+ StyleBox[")\[TildeTilde]",
+  FontFamily->"Roboto",
+  FontSize->24],
+ StyleBox[" ",
+  FontFamily->"Roboto"],
+ StyleBox["0.000989031",
+  FontFamily->"Roboto",
+  FontSize->16]
+}], "Subitem",
+ CellFrame->1,
+ CellDingbat->"\[FilledCircle]",
+ CellFrameColor->RGBColor[
+  0.7686274509803922, 0.7450980392156863, 0.7450980392156863],
+ CellChangeTimes->{{3.815543865086527*^9, 
+  3.815543868596661*^9}},ExpressionUUID->"7ef97255-4caa-42f9-8e6b-\
+b0f7c9f0cabd"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"a", "=", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{"0.99", "*", 
+     RowBox[{"(", 
+      RowBox[{"10", "^", 
+       RowBox[{"(", 
+        RowBox[{"-", "5"}], ")"}]}], ")"}]}], ")"}], "/", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"0.99", "*", 
+      RowBox[{"(", 
+       RowBox[{"10", "^", 
+        RowBox[{"(", 
+         RowBox[{"-", "5"}], ")"}]}], ")"}]}], " ", "+", " ", 
+     RowBox[{"0.01", "*", 
+      RowBox[{"(", 
+       RowBox[{"1", "-", 
+        RowBox[{"10", "^", 
+         RowBox[{"(", 
+          RowBox[{"-", "5"}], ")"}]}]}], ")"}]}]}], ")"}]}]}]], "Input",Expres\
+sionUUID->"c897bad2-9614-4905-b4ea-9e8e459eda5a"],
+
+Cell[BoxData["0.0009890307498651321`"], "Output",
+ CellLabel->
+  "Out[11]= ",ExpressionUUID->"099ae1fc-1b01-42be-a8d4-b7c370a08561"]
+}, Open  ]],
+
+Cell[TextData[{
+ StyleBox["b)",
+  FontFamily->"EB Garamond 08",
+  FontSize->16,
+  FontWeight->Bold],
+ StyleBox[" ",
+  FontFamily->"EB Garamond 08",
+  FontWeight->Bold],
+ StyleBox["(",
+  FontFamily->"Roboto",
+  FontSize->24],
+ StyleBox["0.01*",
+  FontFamily->"Roboto"],
+ StyleBox["(",
+  FontFamily->"Roboto",
+  FontSize->18],
+ StyleBox["10^(-5)",
+  FontFamily->"Roboto",
+  FontSize->16],
+ StyleBox[")",
+  FontFamily->"Roboto",
+  FontSize->18],
+ StyleBox[")/(",
+  FontFamily->"Roboto",
+  FontSize->24],
+ StyleBox["0.01*",
+  FontFamily->"Roboto"],
+ StyleBox["(",
+  FontFamily->"Roboto",
+  FontSize->18],
+ StyleBox["10^(-5)",
+  FontFamily->"Roboto"],
+ StyleBox[")",
+  FontFamily->"Roboto",
+  FontSize->18],
+ StyleBox[" + 0.99*",
+  FontFamily->"Roboto"],
+ StyleBox["(",
+  FontFamily->"Roboto",
+  FontSize->18],
+ StyleBox["1-10^(-5)",
+  FontFamily->"Roboto",
+  FontSize->16],
+ StyleBox[")",
+  FontFamily->"Roboto",
+  FontSize->18],
+ StyleBox[")=",
+  FontFamily->"Roboto",
+  FontSize->24],
+ StyleBox[" ",
+  FontFamily->"Roboto"],
+ StyleBox["0.000000101011",
+  FontFamily->"Roboto",
+  FontSize->16]
+}], "Subitem",
+ CellFrame->1,
+ CellDingbat->"\[FilledCircle]",
+ CellFrameColor->RGBColor[
+  0.7725490196078432, 0.7725490196078432, 0.7725490196078432],
+ CellChangeTimes->{{3.8155438713537064`*^9, 
+  3.8155438754531507`*^9}},ExpressionUUID->"d43cdb1b-512e-4ae6-a8db-\
+9d04075269d8"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"b", "=", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{"0.01", "*", 
+     RowBox[{"(", 
+      RowBox[{"10", "^", 
+       RowBox[{"(", 
+        RowBox[{"-", "5"}], ")"}]}], ")"}]}], ")"}], "/", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"0.01", "*", 
+      RowBox[{"(", 
+       RowBox[{"10", "^", 
+        RowBox[{"(", 
+         RowBox[{"-", "5"}], ")"}]}], ")"}]}], " ", "+", " ", 
+     RowBox[{"0.99", "*", 
+      RowBox[{"(", 
+       RowBox[{"1", "-", 
+        RowBox[{"10", "^", 
+         RowBox[{"(", 
+          RowBox[{"-", "5"}], ")"}]}]}], ")"}]}]}], ")"}]}]}]], "Input",Expres\
+sionUUID->"d026e780-1a1f-479c-b82a-8d7dcdf3cd1c"],
+
+Cell[BoxData["1.0101110091796871`*^-7"], "Output",
+ CellLabel->
+  "Out[12]= ",ExpressionUUID->"faaeb5cd-02ec-4414-bd60-da34f5af66fa"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"AccountingForm", "[", "1.0101110091796871`*^-7", "]"}]], "Input",
+ NumberMarks->False,ExpressionUUID->"bfed6af4-cc55-4661-8c64-19c3ea418302"],
+
+Cell[BoxData[
+ TagBox[
+  InterpretationBox[
+   StyleBox["\<\"0.000000101011\"\>",
+    ShowStringCharacters->False],
+   1.0101110091796871`*^-7,
+   AutoDelete->True],
+  AccountingForm]], "Output",
+ CellFrame->0,
+ CellLabel->
+  "Out[10]//AccountingForm= \
+",ExpressionUUID->"6699ced0-38b4-4e5b-bf8e-cead616c6ad5"]
+}, Open  ]],
+
+Cell[TextData[{
+ StyleBox["c) ",
+  FontFamily->"EB Garamond 08",
+  FontSize->16,
+  FontWeight->"Bold"],
+ StyleBox["La suma de las probabilidades anteriores es aproximadamente: \
+0.000989132",
+  FontFamily->"Roboto",
+  FontSize->16]
+}], "Subitem",
+ CellFrame->1,
+ CellDingbat->"\[FilledCircle]",
+ CellFrameColor->RGBColor[
+  0.788235294117647, 0.7725490196078432, 0.7725490196078432],
+ CellChangeTimes->{
+  3.8155432292018213`*^9, {3.8155438803170447`*^9, 3.815543882025651*^9}},
+ TextAlignment->Left,
+ TextJustification->0,ExpressionUUID->"486216f3-fd44-4228-ad40-36e76907c9a7"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"a", "+", "b"}]], "Input",ExpressionUUID->"b49adb12-4736-427f-8729-d29d93549c2e"],
+
+Cell[BoxData["0.00098913176096605`"], "Output",
+ CellLabel->
+  "Out[13]= ",ExpressionUUID->"08b0222b-c0e9-45e4-8e82-88d0dafa72f4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["\[DownExclamation]PRUEBA DE GIT!",
+ FontFamily->"EB Garamond"]], "Item",
+ CellDingbat->"\[Wolf]",
+ CellChangeTimes->{{3.8156268980947056`*^9, 
+  3.815626907739787*^9}},ExpressionUUID->"a102d37a-2908-4181-b58e-\
+7aa3dd6cd9d8"],
+
+Cell[TextData[StyleBox["",
+ FontFamily->"EB Garamond"]], "Item",
+ CellDingbat->
+  "\[Wolf]",ExpressionUUID->"b30fe0a2-7de7-4da7-80fa-9d52bc39e683"],
+
+Cell[TextData[StyleBox["",
+ FontSize->18]], "Item",
+ CellDingbat->
+  "\[Wolf]",ExpressionUUID->"afd10be0-aa99-45f4-99ad-39dc956c8649"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1360, 685},
+WindowMargins->{{1280, Automatic}, {Automatic, -8}},
+TaggingRules->{"TryRealOnly" -> False},
+FrontEndVersion->"12.0 para Microsoft Windows (32-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 336, 8, 173, "Title",ExpressionUUID->"c994c7b8-bbea-4e56-8906-04f37ceb6ce0"],
+Cell[919, 32, 770, 27, 194, "Subtitle",ExpressionUUID->"48e97b0f-922a-4edf-a03e-7b390e3c51cf"],
+Cell[CellGroupData[{
+Cell[1714, 63, 422, 10, 80, "Section",ExpressionUUID->"63e552fe-af6e-4ba1-8b17-efbb1bff9c92"],
+Cell[CellGroupData[{
+Cell[2161, 77, 373, 13, 33, "Item",ExpressionUUID->"3b252e20-b147-42be-bb7f-6c9e10655d4c"],
+Cell[2537, 92, 1358, 60, 55, "Subitem",ExpressionUUID->"7ef97255-4caa-42f9-8e6b-b0f7c9f0cabd"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3932, 157, 655, 22, 28, "Input",ExpressionUUID->"c897bad2-9614-4905-b4ea-9e8e459eda5a"],
+Cell[4590, 181, 132, 2, 32, "Output",ExpressionUUID->"099ae1fc-1b01-42be-a8d4-b7c370a08561"]
+}, Open  ]],
+Cell[4737, 186, 1373, 61, 55, "Subitem",ExpressionUUID->"d43cdb1b-512e-4ae6-a8db-9d04075269d8"],
+Cell[CellGroupData[{
+Cell[6135, 251, 655, 22, 28, "Input",ExpressionUUID->"d026e780-1a1f-479c-b82a-8d7dcdf3cd1c"],
+Cell[6793, 275, 133, 2, 32, "Output",ExpressionUUID->"faaeb5cd-02ec-4414-bd60-da34f5af66fa"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6963, 282, 165, 2, 48, "Input",ExpressionUUID->"bfed6af4-cc55-4661-8c64-19c3ea418302"],
+Cell[7131, 286, 311, 11, 46, "Output",ExpressionUUID->"6699ced0-38b4-4e5b-bf8e-cead616c6ad5"]
+}, Open  ]],
+Cell[7457, 300, 578, 17, 45, "Subitem",ExpressionUUID->"486216f3-fd44-4228-ad40-36e76907c9a7"],
+Cell[CellGroupData[{
+Cell[8060, 321, 104, 1, 28, "Input",ExpressionUUID->"b49adb12-4736-427f-8729-d29d93549c2e"],
+Cell[8167, 324, 130, 2, 32, "Output",ExpressionUUID->"08b0222b-c0e9-45e4-8e82-88d0dafa72f4"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8334, 331, 249, 5, 30, "Item",ExpressionUUID->"a102d37a-2908-4181-b58e-7aa3dd6cd9d8"],
+Cell[8586, 338, 147, 3, 30, "Item",ExpressionUUID->"b30fe0a2-7de7-4da7-80fa-9d52bc39e683"],
+Cell[8736, 343, 134, 3, 35, "Item",ExpressionUUID->"afd10be0-aa99-45f4-99ad-39dc956c8649"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
